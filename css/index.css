@@ -2,7 +2,7 @@
 Colors
 
 -Primary: #e67e22 
--Tints:#fae5d3
+-Tints:#fae5d3 #f8d8bd
 -Shades: #cf711f
 -Accents:
 -Grays: #555 #333
@@ -39,13 +39,40 @@ body {
 /* GENERAL REUABLE COMPONENTS */
 /* ................................. */
 
-.heading-primary {
-  font-size: 5.2rem;
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
   font-weight: 700;
-  line-height: 1.06;
   color: #333;
   letter-spacing: -0.5px;
+}
+
+.heading-primary {
+  font-size: 5.2rem;
+  line-height: 1.06;
   margin-bottom: 3.3rem;
+}
+
+.heading-secondary {
+  font-size: 4.4rem;
+  line-height: 1.6;
+  margin-bottom: 6.8rem;
+}
+
+.subheading {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #cf711f;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.75px;
+}
+
+.heading-tertiary {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 2rem;
 }
 
 .btn:link,
@@ -78,6 +105,33 @@ body {
 
 .margin-right-sm {
   margin-right: 1.5rem !important;
+}
+
+.container {
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
+}
+
+.grid--2--cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3--cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid--4--cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--center--y {
+  align-items: center;
 }
 
 /* ................................. */
@@ -194,4 +248,60 @@ body {
 .delivered-text span {
   font-weight: bold;
   color: #cf711f;
+}
+
+/* ................................. */
+/* HOW IT WORHS SECTION */
+/* ................................. */
+
+.section-how {
+  padding: 10rem 0;
+}
+
+.step-number {
+  font-size: 8.6rem;
+  font-weight: 600;
+  color: #ddd;
+  margin-bottom: 1.2rem;
+}
+
+.step-description {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+.step-image-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.step-image-box::after,
+.step-image-box::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+.step-image-box::before {
+  width: 60%;
+  /* height: 60%; */
+  padding-bottom: 60%;
+  background-color: #fae5d3;
+}
+
+.step-image-box::after {
+  width: 45%;
+  padding-bottom: 45%;
+  background-color: #f8d8bd;
+}
+
+.step-image {
+  width: 35%;
+  z-index: 1;
 }
