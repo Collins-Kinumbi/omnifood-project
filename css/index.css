@@ -23,6 +23,11 @@ Whitespace
   box-sizing: border-box;
 }
 
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(230, 126, 34, 0.5);
+}
+
 html {
   /* 10px / 16px = 0.625 === 62.5%*/
   font-size: 62.5%;
@@ -33,6 +38,18 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #555;
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  width: 0.5rem; /* width of the entire scrollbar */
+}
+body::-webkit-scrollbar-track {
+  background: #fae6d4; /* color of the tracking area */
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #cf711f; /* color of the scroll thumb */
+  border-radius: 2rem; /* roundness of the scroll thumb */
 }
 
 /* ................................. */
@@ -79,6 +96,7 @@ strong {
   margin-bottom: 2rem;
 }
 
+.btn,
 .btn:link,
 .btn:visited {
   font-size: 2rem;
@@ -87,8 +105,12 @@ strong {
   color: #fff;
   text-decoration: none;
   border-radius: 0.9rem;
-  display: inline-flex;
+  display: inline-block;
   transition: all 0.4s;
+
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
 }
 
 .btn-full:hover,
@@ -105,6 +127,20 @@ strong {
 .btn-outline:active {
   background-color: #fae5d3;
   box-shadow: inset 0 0 0 3px #fff;
+}
+
+.btn--form {
+  background-color: #45260a;
+  color: #fff;
+  align-self: end;
+  padding: 1.2rem;
+  font-weight: 400;
+}
+
+.btn--form:hover {
+  font-weight: 500;
+  background-color: #fae5d3;
+  color: #333;
 }
 
 .margin-right-sm {
@@ -231,6 +267,7 @@ strong {
   color: #333;
   font-weight: 500;
   transition: 0.4s;
+  border-radius: 0.4rem;
 }
 
 .main-nav-link:hover,
@@ -238,16 +275,16 @@ strong {
   color: #cf711f;
 }
 
-.main-nav-link.call-to-action:link,
-.main-nav-link.call-to-action:visited {
+.main-nav-link.cta:link,
+.main-nav-link.cta:visited {
   background-color: #e67e22;
   color: #fff;
   padding: 1.2rem 2.4rem;
   border-radius: 0.9rem;
 }
 
-.main-nav-link.call-to-action:hover,
-.main-nav-link.call-to-action:active {
+.main-nav-link.cta:hover,
+.main-nav-link.cta:active {
   background-color: #cf711f;
 }
 
@@ -488,6 +525,10 @@ strong {
   font-size: 1.8rem;
 }
 
+.round {
+  border-radius: 0.4rem;
+}
+
 /* ................................. */
 /* TESTIMONIALS SECTION */
 /* ................................. */
@@ -652,4 +693,90 @@ strong {
 .feature-text {
   font-size: 1.8rem;
   line-height: 1.6;
+}
+
+/* ................................. */
+/* CALL TO ACTION SECTION */
+/* ................................. */
+
+.section-call-to-action {
+  padding: 9.6rem 0;
+  background-color: #fdf9f6;
+}
+.call-to-action {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  background-color: #e67e22;
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  background-image: linear-gradient(to right bottom, #eea564, #e67e22);
+  overflow: hidden;
+}
+
+.call-to-action *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(250, 229, 211, 0.5);
+}
+
+.call-to-action-text-box {
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+  color: #45260a;
+}
+
+.call-to-action-text-box .heading-secondary {
+  color: inherit;
+  margin-bottom: 2rem;
+}
+
+.call-to-action-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 3.2rem;
+}
+
+.call-to-action-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
+}
+
+.call-to-action-form label {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+
+.call-to-action-form input,
+.call-to-action-form select {
+  width: 100%;
+  padding: 1.2rem;
+  font-family: inherit;
+  color: inherit;
+  font-size: 1.8rem;
+  border: none;
+  background-color: #fdf9f6;
+  border-radius: 0.9rem;
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.2);
+}
+
+.call-to-action-form input::placeholder {
+  color: #aaa;
+}
+
+.call-to-action-form select option {
+  /* padding: 10px; */
+  background-color: #fff4eb;
+}
+
+.call-to-action-img-box {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(235, 151, 78, 0.35),
+      rgba(230, 125, 34, 0.35)
+    ),
+    url("/img/eating.jpg");
+  background-size: cover;
+  background-position: center;
 }
