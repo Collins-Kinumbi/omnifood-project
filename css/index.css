@@ -2,7 +2,7 @@
 Colors
 
 -Primary: #e67e22 
--Tints:#fae5d3 #f8d8bd
+-Tints:#fae5d3 #f8d8bd #fdf9f6
 -Shades: #cf711f
 -Accents:
 -Grays: #555 #333 #faf8f8 #ddd
@@ -38,6 +38,10 @@ body {
 /* ................................. */
 /* GENERAL REUABLE COMPONENTS */
 /* ................................. */
+
+strong {
+  font-weight: 500;
+}
 
 .heading-primary,
 .heading-secondary,
@@ -105,6 +109,30 @@ body {
 
 .margin-right-sm {
   margin-right: 1.5rem !important;
+}
+
+.margin-bottom-md {
+  margin-bottom: 4.8rem !important;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.link:link,
+.link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #e67e22;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 0.2rem;
+  transition: 0.1s;
+}
+
+.link:hover,
+.link:active {
+  color: #cf711f;
+  border: 1px solid transparent;
 }
 
 .container {
@@ -337,4 +365,107 @@ body {
 .step-image {
   width: 35%;
   z-index: 1;
+}
+
+/* ................................. */
+/* MEALS SECTION */
+/* ................................. */
+.meals-section {
+  padding: 9.6rem 0;
+  background-color: #fdf9f6;
+}
+
+.meal {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.3);
+  border-radius: 1.2rem;
+  overflow: hidden;
+  transition: 0.4s;
+}
+
+.meal:hover {
+  transform: translateY(-2rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.2);
+}
+
+.meal-img {
+  width: 100%;
+}
+
+.meal-content {
+  padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+}
+
+.meal-tags {
+  margin-bottom: 1.2rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.tag {
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 0.4rem 0.8rem;
+  color: #333;
+  text-transform: uppercase;
+  border-radius: 10px;
+}
+
+.tag--vegan {
+  background-color: #51cf66;
+}
+.tag--paleo {
+  background-color: #fcc419;
+}
+
+.meal-title {
+  font-size: 2rem;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 3.2rem;
+}
+
+.meal-attributes {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.meal-attribute {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.meal-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+  color: #e67e22;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.list-item {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.list-icon {
+  width: 3rem;
+  height: 3rem;
+  color: #e67e22;
+}
+
+.all-recipes {
+  text-align: center;
+  font-size: 1.8rem;
 }
