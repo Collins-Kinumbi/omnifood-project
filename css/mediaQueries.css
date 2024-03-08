@@ -10,9 +10,9 @@
   .hero {
     max-width: 120rem;
   }
-  .hero-description {
+  /* .hero-description {
     font-size: 1.8rem;
-  }
+  } */
 
   .gallery {
     grid-template-columns: repeat(2, 1fr);
@@ -57,5 +57,75 @@
 
   .testimonials-container {
     padding: 9.6rem 3.2rem;
+  }
+}
+
+/* Tablets (Below 944px) */
+/* 940px / 16px = 58.75em */
+
+@media (max-width: 59em) {
+  html {
+    /* 8px / 16px = 50% */
+    font-size: 50%;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 0 8.6rem;
+    gap: 6.4rem;
+  }
+
+  .hero-text-box,
+  .hero-image-box {
+    text-align: center;
+  }
+
+  .delivered-meals {
+    justify-content: center;
+    margin-top: 3.2rem;
+  }
+
+  .hero-img {
+    width: 60%;
+  }
+
+  .logo-img {
+    height: 2.4rem;
+  }
+
+  .step-number {
+    font-size: 7.4rem;
+  }
+
+  .meal-content {
+    padding: 2.4rem 3.2rem 3.2rem 3.2rem;
+  }
+
+  .section-testimonials {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .pricing-plan--starter {
+    padding: 3.6rem;
+  }
+
+  .pricing-plan--complete {
+    padding: 3.76rem;
+  }
+
+  .call-to-action {
+    grid-template-columns: 3fr 2fr;
+  }
+
+  .call-to-action-form {
+    grid-template-columns: 1fr;
+  }
+
+  .btn--form {
+    margin-top: 1.4rem;
   }
 }
