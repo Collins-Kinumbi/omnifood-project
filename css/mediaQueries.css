@@ -14,7 +14,48 @@
     font-size: 1.8rem;
   }
 
-  /* .gallery {
+  .gallery {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Landscape Tablets (Below 1200px) */
+/* 1200px / 16px = 75em */
+
+@media (max-width: 75em) {
+  html {
+    /* 9px / 16px = 56.29% */
+    font-size: 56.25%;
+  }
+
+  .header {
+    padding: 0 3.2rem;
+  }
+
+  .main-nav-list {
+    gap: 3.2rem;
+  }
+
+  .hero {
+    gap: 4.8rem;
+  }
+
+  /* .heading-primary {
+    font-size: 3.4rem;
   } */
+  .heading-secondary {
+    font-size: 3.6rem;
+  }
+
+  .heading-tertiary {
+    font-size: 2.4rem;
+  }
+  .grid {
+    column-gap: 4.8rem;
+    row-gap: 6.4rem;
+  }
+
+  .testimonials-container {
+    padding: 9.6rem 3.2rem;
+  }
 }
