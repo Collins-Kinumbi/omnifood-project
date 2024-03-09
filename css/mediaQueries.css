@@ -142,11 +142,11 @@
   /* Mobile */
   .btn-mobile-nav {
     display: block;
-    z-index: 2;
+    z-index: 4;
   }
 
   .main-nav {
-    background-color: #ffffff;
+    background-color: #ffffffef;
     position: absolute;
     top: 0;
     left: 0;

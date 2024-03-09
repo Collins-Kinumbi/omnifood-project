@@ -30,6 +30,31 @@ headerEl.addEventListener("click", (e) => {
   }
 });
 
+// Sticky nav
+const bodyEl = document.querySelector("#body");
+
+const sectionHeroEl = document.querySelector(".section-hero");
+
+const observer = new IntersectionObserver(
+  function (entries) {
+    const entry = entries[0];
+    // console.log(entry);
+
+    if (!entry.isIntersecting) {
+      bodyEl.classList.add("sticky");
+    } else {
+      bodyEl.classList.remove("sticky");
+    }
+  },
+  {
+    root: null, //Null means viewport
+    threshold: 0, // 0 triggers event as soon as sectionHeroEl leaves the viewport
+    rootMargin: "-80px", // coresponds to the 8rem of height added in sticky in css
+  }
+);
+
+observer.observe(sectionHeroEl);
+
 //Automatic footer year
 const footerYear = document.querySelector(".footer-year");
 
