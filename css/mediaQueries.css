@@ -23,6 +23,11 @@
 /* 1200px / 16px = 75em */
 
 @media (max-width: 75em) {
+  *:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
   html {
     /* 9px / 16px = 56.29% */
     font-size: 56.25%;
@@ -64,6 +69,11 @@
 /* 940px / 16px = 58.75em */
 
 @media (max-width: 59em) {
+  *:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
   html {
     /* 8px / 16px = 50% */
     font-size: 50%;
@@ -185,6 +195,11 @@
 
 /* Smaller tablets(Below 704px) */
 @media (max-width: 44em) {
+  *:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
   .grid--3--cols,
   .grid--4--cols {
     grid-template-columns: repeat(2, 1fr);
@@ -227,6 +242,11 @@
 
 /* phones(below 544px) */
 @media (max-width: 34em) {
+  *:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
   .btn,
   .btn:link,
   .btn:visited {
