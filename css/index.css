@@ -294,7 +294,8 @@ strong {
   padding-top: 0;
   padding-bottom: 0;
   z-index: 3;
-  background-color: #ffffffef;
+  background-color: #ffffff79;
+  backdrop-filter: blur(30px);
   box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.2);
 }
 

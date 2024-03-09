@@ -25,8 +25,10 @@ headerEl.addEventListener("click", (e) => {
   // console.log(e);
   if (e.target.id === "open") {
     headerEl.classList.add("nav-open");
+    document.getElementsByTagName("html")[0].style.overflow = "hidden";
   } else if (e.target.id === "close" || e.target.localName === "a") {
     headerEl.classList.remove("nav-open");
+    document.getElementsByTagName("html")[0].style.overflow = "scroll";
   }
 });
 
