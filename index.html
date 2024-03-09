@@ -3,6 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Omnifood is an AI powered food subscription that will make you healthy again 365 days per year. It's tailored to your personal tastes and nutritional needs"
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" href="./img/favicon.png" />
+
+    <link rel="appel-touch-icon" href="./img/apple-touch-icon.png" />
+
+    <link rel="manifest.webmanifest" href="./manifest.webmanifest" />
 
     <!--custom styles  -->
     <link rel="stylesheet" href="./css/index.css" />
@@ -20,13 +31,18 @@
 
     <!-- Custom script -->
     <script defer src="./script/script.js"></script>
-    <title>Omnifood</title>
+    <title>Omnifood | AI powered</title>
   </head>
   <body id="body">
     <!-- Navigation component -->
     <header class="header">
       <a href="#">
-        <img src="./img/omnifood-logo.png" alt="omnifood logo" class="logo" />
+        <img
+          src="./img/omnifood-logo.png"
+          alt="omnifood logo"
+          class="logo"
+          aria-label="Omnifood logo"
+        />
       </a>
       <nav class="main-nav">
         <ul class="main-nav-list">
@@ -46,7 +62,7 @@
 
       <!-- Mobile -->
 
-      <button class="btn-mobile-nav">
+      <button class="btn-mobile-nav" aria-label="Open navigation button">
         <ion-icon
           name="reorder-four"
           class="mobile-icon-nav"
@@ -112,7 +128,7 @@
             </div>
           </div>
           <div class="hero-image-box">
-            <img src="./img/hero.png" alt="Hero banner" class="hero-img" />
+            <img src="./img/hero.webp" alt="Hero banner" class="hero-img" />
           </div>
         </div>
       </section>
@@ -531,7 +547,10 @@
             </ul>
 
             <div class="plan-sign-up">
-              <a href="#call-to-action" class="btn btn-full"
+              <a
+                href="#call-to-action"
+                class="btn btn-full"
+                aria-label="Start eating healthy"
                 >Start eating healthy</a
               >
             </div>
@@ -564,7 +583,10 @@
               </li>
             </ul>
             <div class="plan-sign-up">
-              <a href="#call-to-action" class="btn btn-full"
+              <a
+                href="#call-to-action"
+                class="btn btn-full"
+                aria-label="Start eating Healthy"
                 >Start eating healthy</a
               >
             </div>
@@ -665,7 +687,13 @@
                   </select>
                 </div>
 
-                <button class="btn btn--form">Sign up now</button>
+                <button
+                  class="btn btn--form"
+                  type="submit"
+                  aria-label="submit to sign up button"
+                >
+                  Sign up now
+                </button>
               </form>
             </div>
 
@@ -683,7 +711,7 @@
     <footer class="footer">
       <div class="container grid footer-grid">
         <div class="logo-col">
-          <a href="#" class="footer-logo">
+          <a href="#" class="footer-logo" aria-label="Omnifood logo">
             <img
               src="./img/omnifood-logo.png"
               alt="omnifood logo"
@@ -693,22 +721,34 @@
 
           <ul class="social-links">
             <li>
-              <a href="#" class="social-link">
+              <a
+                href="#"
+                class="social-link"
+                aria-label="Follow us on Linkedin"
+              >
                 <ion-icon name="logo-linkedin"></ion-icon>
               </a>
             </li>
             <li>
-              <a href="#" class="social-link">
+              <a
+                href="#"
+                class="social-link"
+                aria-label="Follow us on Instagram"
+              >
                 <ion-icon name="logo-instagram"></ion-icon>
               </a>
             </li>
             <li>
-              <a href="#" class="social-link">
+              <a
+                href="#"
+                class="social-link"
+                aria-label="Follow us on Facebook"
+              >
                 <ion-icon name="logo-facebook"></ion-icon>
               </a>
             </li>
             <li>
-              <a href="#" class="social-link">
+              <a href="#" class="social-link" aria-label="Follow us on Twitter">
                 <ion-icon name="logo-twitter"></ion-icon>
               </a>
             </li>
@@ -725,9 +765,17 @@
           <address class="contacts">
             <p>623 Harrison St., 2nd Floor, San Francisco, CA 94107</p>
             <p>
-              <a class="contact-link" href="tel:415-201-6370">415-201-6370</a>
+              <a
+                class="contact-link"
+                href="tel:415-201-6370"
+                aria-label="Contact us with our number"
+                >415-201-6370</a
+              >
               <br />
-              <a class="contact-link" href="mail:hello@omnifood.com"
+              <a
+                class="contact-link"
+                href="mail:hello@omnifood.com"
+                aria-label="Contact us on our email"
                 >hello@omnifood.com</a
               >
             </p>
@@ -738,29 +786,74 @@
           <p class="footer-heading">Account</p>
           <ul class="footer-nav">
             <li>
-              <a class="footer-link" href="#call-to-action">Create account</a>
+              <a
+                class="footer-link"
+                href="#call-to-action"
+                aria-label="Create an account"
+                >Create account</a
+              >
             </li>
-            <li><a class="footer-link" href="#call-to-action">Sign in</a></li>
-            <li><a class="footer-link" href="#">iOS app</a></li>
-            <li><a class="footer-link" href="#">Android app</a></li>
+            <li>
+              <a class="footer-link" href="#call-to-action" aria-label="Sign in"
+                >Sign in</a
+              >
+            </li>
+            <li>
+              <a
+                class="footer-link"
+                href="#"
+                aria-label="Get our mobile app from the Appel store"
+                >iOS app</a
+              >
+            </li>
+            <li>
+              <a
+                class="footer-link"
+                href="#"
+                aria-label="Get our mobile app from the playstore"
+                >Android app</a
+              >
+            </li>
           </ul>
         </nav>
 
         <nav class="nav-col">
           <p class="footer-heading">Company</p>
           <ul class="footer-nav">
-            <li><a class="footer-link" href="#">For Business</a></li>
-            <li><a class="footer-link" href="#">Cooking partners</a></li>
-            <li><a class="footer-link" href="#">Careers</a></li>
+            <li>
+              <a class="footer-link" href="#" aria-label="For business"
+                >For Business</a
+              >
+            </li>
+            <li>
+              <a class="footer-link" href="#" aria-label="Our cooking partners"
+                >Cooking partners</a
+              >
+            </li>
+            <li>
+              <a class="footer-link" href="#" aria-label="Careers">Careers</a>
+            </li>
           </ul>
         </nav>
 
         <nav class="nav-col">
           <p class="footer-heading">Resources</p>
           <ul class="footer-nav">
-            <li><a class="footer-link" href="#">Recipe directory</a></li>
-            <li><a class="footer-link" href="#">Help center</a></li>
-            <li><a class="footer-link" href="#">Privacy & terms</a></li>
+            <li>
+              <a class="footer-link" href="#" aria-label="Recipe directory"
+                >Recipe directory</a
+              >
+            </li>
+            <li>
+              <a class="footer-link" href="#" aria-label="Help center"
+                >Help center</a
+              >
+            </li>
+            <li>
+              <a class="footer-link" href="#" aria-label="Privacy & terms"
+                >Privacy & terms</a
+              >
+            </li>
           </ul>
         </nav>
       </div>
