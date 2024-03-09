@@ -215,22 +215,13 @@
   }
 
   .logo-col,
-  .addres-col {
+  .address-col {
     grid-column: span 3;
   }
 
   .nav-col {
     grid-row: 1;
     grid-column: span 2;
-  }
-
-  .social-links {
-    justify-content: flex-start;
-    gap: 2rem;
-  }
-
-  .copyright {
-    margin-top: 9.6rem;
   }
 }
 
@@ -310,9 +301,5 @@
   .call-to-action-img-box {
     height: 34rem;
     grid-row: 1;
-  }
-
-  .copyright {
-    margin-top: 5rem;
   }
 }
