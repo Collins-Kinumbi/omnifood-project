@@ -19,7 +19,7 @@
     ></script>
 
     <!-- Custom script -->
-    <script src="./script/script.js" defer></script>
+    <script defer src="./script/script.js"></script>
     <title>Omnifood</title>
   </head>
   <body>
@@ -47,8 +47,16 @@
       <!-- Mobile -->
 
       <button class="btn-mobile-nav">
-        <ion-icon name="reorder-four" class="mobile-icon-nav"></ion-icon>
-        <ion-icon name="close-circle" class="mobile-icon-nav"></ion-icon>
+        <ion-icon
+          name="reorder-four"
+          class="mobile-icon-nav"
+          id="open"
+        ></ion-icon>
+        <ion-icon
+          name="close-circle"
+          class="mobile-icon-nav"
+          id="close"
+        ></ion-icon>
       </button>
     </header>
     <main>
@@ -665,6 +673,7 @@
       </section>
     </main>
 
+    <!-- FOOTER SECTION -->
     <footer class="footer">
       <div class="container grid footer-grid">
         <div class="logo-col">
@@ -700,7 +709,8 @@
           </ul>
 
           <div class="copyright">
-            Copyright &copy; <span>2024</span> by Omnifood. All rights reserved
+            Copyright &copy; <span class="footer-year">2024</span> by Omnifood.
+            All rights reserved
           </div>
         </div>
 
