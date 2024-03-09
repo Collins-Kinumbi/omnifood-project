@@ -25,7 +25,7 @@ headerEl.addEventListener("click", (e) => {
   // console.log(e);
   if (e.target.id === "open") {
     headerEl.classList.add("nav-open");
-  } else if (e.target.id === "close") {
+  } else if (e.target.id === "close" || e.target.localName === "a") {
     headerEl.classList.remove("nav-open");
   }
 });
